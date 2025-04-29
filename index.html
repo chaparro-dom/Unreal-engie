@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="img-fix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>Unreal Engine 5 - Información Completa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg" alt="Logo Unreal Engine" onerror="this.onerror=null; this.src='https://via.placeholder.com/45x45?text=UE5';">
+            <span>Unreal Engine 5</span>
+        </div>
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="#inicio">Inicio</a></li>
+            <li class="navbar__item"><a href="#caracteristicas">Características</a></li>
+            <li class="navbar__item"><a href="#ventajas">Ventajas y Desventajas</a></li>
+            <li class="navbar__item"><a href="#requisitos">Requisitos</a></li>
+            <li class="navbar__item"><a href="#juegos">Juegos</a></li>
+            <li class="navbar__item"><a href="#trailers">Trailers</a></li>
+            <li class="navbar__item">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero__content">
+            <h1>Unreal Engine 5</h1>
+            <img src="assets/img/Unreal engie.jpg" alt="Unreal Engine 5" class="hero__image" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x400?text=Unreal+Engine+5';">
+            <p>El motor de juegos más avanzado del mundo</p>
+            <a href="#caracteristicas" class="btn btn-primary">Descubrir más <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="caracteristicas" class="section">
+            <div class="container">
+                <h2 class="section__title">Características Principales</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Nanite</h3>
+                        <p>Sistema de geometría virtualizada que permite crear detalles a nivel de píxel con millones de polígonos, sin sacrificar rendimiento.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Lumen</h3>
+                        <p>Sistema de iluminación global dinámica que reacciona a los cambios de escena y luz, creando reflejos y sombras realistas en tiempo real.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>MetaSounds</h3>
+                        <p>Sistema de audio avanzado que ofrece control completo sobre la jerarquía de DSP de audio, similar a los materiales para gráficos.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>World Partition</h3>
+                        <p>Sistema que divide automáticamente el mundo en celdas para transmitir solo lo necesario, permitiendo crear mundos enormes.</p>
+                    </div>
+                </div>
+                <div class="more-info-container">
+                    <a href="caracteristicas-principales.html" class="btn btn-primary">Ver más información</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="ventajas" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Ventajas y Desventajas</h2>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3>Ventajas</h3>
+                        <ul>
+                            <li>Gráficos fotorrealistas de última generación</li>
+                            <li>Herramientas intuitivas para desarrolladores y artistas</li>
+                            <li>Comunidad activa y gran cantidad de recursos disponibles</li>
+                            <li>Licencia gratuita para proyectos que generen menos de $1 millón</li>
+                            <li>Compatibilidad con múltiples plataformas</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h3>Desventajas</h3>
+                        <ul>
+                            <li>Curva de aprendizaje pronunciada para principiantes</li>
+                            <li>Requiere hardware potente para aprovechar todas sus características</li>
+                            <li>Regalías del 5% para proyectos comerciales exitosos</li>
+                            <li>Mayor complejidad que otros motores más sencillos</li>
+                            <li>Tamaño de los proyectos y tiempos de compilación extensos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="more-info-container">
+                    <a href="ventajas-desventajas.html" class="btn btn-primary">Ver más información</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="requisitos" class="section">
+            <div class="container">
+                <h2 class="section__title">Requisitos del Sistema</h2>
+                <div class="requirements">
+                    <div class="requirement">
+                        <h3>Requisitos Mínimos</h3>
+                        <ul>
+                            <li>Sistema Operativo: Windows 10 64-bit</li>
+                            <li>Procesador: Quad-core Intel o AMD, 2.5 GHz o mejor</li>
+                            <li>Memoria RAM: 8 GB</li>
+                            <li>Tarjeta Gráfica: DirectX 11 o 12 compatible</li>
+                            <li>Almacenamiento: 40 GB de espacio libre en disco duro</li>
+                        </ul>
+                    </div>
+                    <div class="requirement">
+                        <h3>Requisitos Recomendados</h3>
+                        <ul>
+                            <li>Sistema Operativo: Windows 10/11 64-bit</li>
+                            <li>Procesador: 8-core Intel o AMD, 3.4 GHz o mejor</li>
+                            <li>Memoria RAM: 32 GB o más</li>
+                            <li>Tarjeta Gráfica: NVIDIA GeForce RTX 2080 o AMD equivalente</li>
+                            <li>Almacenamiento: SSD con 100+ GB de espacio libre</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="more-info-container">
+                    <a href="requisitos-sistema.html" class="btn btn-primary">Ver más información</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="juegos" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Juegos que utilizan Unreal Engine 5</h2>
+                <p class="section__description">Descubre algunos de los títulos más impresionantes desarrollados con esta tecnología de vanguardia.</p>
+                <div class="games">
+                    <div class="game">
+                        <img src="assets/img/Fornite.jpg" alt="Fortnite" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x180?text=Fortnite';">
+                        <h3>Fortnite</h3>
+                        <p>El popular battle royale de Epic Games migró a UE5 para mejorar sus gráficos y rendimiento.</p>
+                    </div>
+                    <div class="game">
+                        <img src="assets/img/Hogwarts Legacy.jpg" alt="Hogwarts Legacy" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x180?text=Hogwarts+Legacy';">
+                        <h3>Hogwarts Legacy</h3>
+                        <p>RPG de mundo abierto ambientado en el universo de Harry Potter con gráficos impresionantes.</p>
+                    </div>
+                    <div class="game">
+                        <img src="assets/img/Alan Wake 2.jpg    " alt="Alan Wake 2" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x180?text=Alan+Wake+2';">
+                        <h3>Alan Wake 2</h3>
+                        <p>Thriller psicológico con una atmósfera opresiva y un nivel de detalle visual sin precedentes.</p>
+                    </div>
+                    <div class="game">
+                        <img src="assets/img/Black Myth Wukong.jpg" alt="Black Myth: Wukong" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x180?text=Black+Myth+Wukong';">
+                        <h3>Black Myth: Wukong</h3>
+                        <p>RPG de acción basado en la mitología china con visuales espectaculares.</p>
+                    </div>
+                    <div class="game">
+                        <img src="assets/img/final-fantasy-7-remake-being-created-with-unreal-e_dq24.1200.jpg" alt="Final Fantasy VII Rebirth" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x180?text=Final+Fantasy+VII+Rebirth';">
+                        <h3>Final Fantasy VII Rebirth</h3>
+                        <p>La segunda parte del remake de Final Fantasy VII con entornos vastos y detallados.</p>
+                    </div>
+                    <div class="game">
+                        <img src="assets/img/Silent Hill 2 Remake.jpg" alt="Silent Hill 2 Remake" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x180?text=Silent+Hill+2+Remake';">
+                        <h3>Silent Hill 2 Remake</h3>
+                        <p>El remake del clásico de terror psicológico con una atmósfera densa y perturbadora.</p>
+                    </div>
+                </div>
+                <div class="more-info-container">
+                    <a href="juegos-unreal.html" class="btn btn-primary">Ver más información</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="comprar" class="section">
+            <div class="container">
+                <h2 class="section__title">Comprar Juegos</h2>
+                <p class="section__description">Descubre los mejores juegos desarrollados con Unreal Engine 5 y adquiérelos en tu plataforma favorita.</p>
+                <div class="game-cards">
+                    <div class="game-card">
+                        <img src="assets/img/Fornite.jpg" alt="Fortnite" class="game-card__image" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x180?text=Fortnite';">
+                        <div class="game-card__content">
+                            <h3 class="game-card__title">Fortnite</h3>
+                            <p class="game-card__genre">Battle Royale</p>
+                            <p class="game-card__description">El popular battle royale de Epic Games con construcción, combates y eventos especiales.</p>
+                            <p class="game-card__price">Gratis</p>
+                            <div class="game-card__buttons">
+                                <a href="detalles-juego.html?id=fortnite" class="btn btn-primary btn-sm">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/img/The Matrix Awakens.jpg" alt="The Matrix Awakens" class="game-card__image" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x180?text=The+Matrix+Awakens';">
+                        <div class="game-card__content">
+                            <h3 class="game-card__title">The Matrix Awakens</h3>
+                            <p class="game-card__genre">Experiencia Interactiva</p>
+                            <p class="game-card__description">Experiencia técnica que muestra las capacidades fotorrealistas de Unreal Engine 5.</p>
+                            <p class="game-card__price">Gratis</p>
+                            <div class="game-card__buttons">
+                                <a href="detalles-juego.html?id=matrix" class="btn btn-primary btn-sm">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/img/Senua's Saga Hellblade II.jpg" alt="Senua's Saga: Hellblade II" class="game-card__image" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x180?text=Hellblade+II';">
+                        <div class="game-card__content">
+                            <h3 class="game-card__title">Senua's Saga: Hellblade II</h3>
+                            <p class="game-card__genre">Acción y Aventura</p>
+                            <p class="game-card__description">Secuela del aclamado juego de Ninja Theory con gráficos impresionantes.</p>
+                            <p class="game-card__price">$59.99</p>
+                            <div class="game-card__buttons">
+                                <a href="detalles-juego.html?id=hellblade" class="btn btn-primary btn-sm">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/img/Black Myth Wukong.jpg" alt="Black Myth: Wukong" class="game-card__image" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x180?text=Black+Myth+Wukong';">
+                        <div class="game-card__content">
+                            <h3 class="game-card__title">Black Myth: Wukong</h3>
+                            <p class="game-card__genre">RPG de Acción</p>
+                            <p class="game-card__description">RPG de acción basado en la mitología china con visuales espectaculares.</p>
+                            <p class="game-card__price">$59.99</p>
+                            <div class="game-card__buttons">
+                                <a href="detalles-juego.html?id=wukong" class="btn btn-primary btn-sm">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/img/Senua's Saga Hellblade II v2.jpg" alt="S.T.A.L.K.E.R. 2: Heart of Chornobyl" class="game-card__image" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x180?text=STALKER+2';">
+                        <div class="game-card__content">
+                            <h3 class="game-card__title">S.T.A.L.K.E.R. 2</h3>
+                            <p class="game-card__genre">FPS, Supervivencia</p>
+                            <p class="game-card__description">La esperada secuela que aprovecha UE5 para crear un mundo post-apocalíptico detallado.</p>
+                            <p class="game-card__price">$59.99</p>
+                            <div class="game-card__buttons">
+                                <a href="detalles-juego.html?id=stalker2" class="btn btn-primary btn-sm">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="trailers" class="section">
+            <div class="container">
+                <h2 class="section__title">Trailers de Juegos en Unreal Engine 5</h2>
+                <p class="section__description">Descubre el impresionante potencial visual y técnico de Unreal Engine 5 a través de estos trailers oficiales de los juegos más esperados.</p>
+                <div class="trailers">
+                    <div class="trailer">
+                        <h3>Black Myth: Wukong</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/O2nNljv0MOw" title="Black Myth: Wukong Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p>Este impresionante RPG de acción basado en la mitología china muestra el increíble nivel de detalle y realismo que se puede lograr con Unreal Engine 5.</p>
+                    </div>
+                    <div class="trailer">
+                        <h3>Senua's Saga: Hellblade II</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fukYzbthEVw" title="Senua's Saga: Hellblade II Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p>Ninja Theory lleva el realismo visual y la narrativa inmersiva a otro nivel con esta secuela desarrollada íntegramente en Unreal Engine 5.</p>
+                    </div>
+                    <div class="trailer">
+                        <h3>The Matrix Awakens</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WU0gvPcc3jQ" title="The Matrix Awakens: An Unreal Engine 5 Experience" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p>Esta experiencia técnica demuestra las capacidades fotorrealistas de Unreal Engine 5, difuminando la línea entre lo real y lo virtual.</p>
+                    </div>
+                    <div class="trailer">
+                        <h3>S.T.A.L.K.E.R. 2: Heart of Chornobyl</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/SjDMwsbaSd8" title="S.T.A.L.K.E.R. 2: Heart of Chornobyl Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p>La esperada secuela de la serie S.T.A.L.K.E.R. aprovecha Unreal Engine 5 para crear un mundo post-apocalíptico increíblemente detallado y atmosférico.</p>
+                    </div>
+                </div>
+                <div class="more-info-container">
+                    <a href="mas-trailers.html" class="btn btn-primary">Ver más trailers</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 Sitio Informativo sobre Unreal Engine 5. Este sitio no está afiliado oficialmente con Epic Games.</p>
+            <p>Unreal Engine es una marca registrada de Epic Games, Inc.</p>
+        </div>
+    </footer>
+</body>
+</html>

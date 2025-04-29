@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>Detalles del Juego - Unreal Engine 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg" alt="Logo Unreal Engine">
+            <span>Unreal Engine 5</span>
+        </div>
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="index.html#inicio">Inicio</a></li>
+            <li class="navbar__item"><a href="index.html#caracteristicas">Características</a></li>
+            <li class="navbar__item"><a href="index.html#ventajas">Ventajas y Desventajas</a></li>
+            <li class="navbar__item"><a href="index.html#requisitos">Requisitos</a></li>
+            <li class="navbar__item"><a href="index.html#juegos">Juegos</a></li>
+            <li class="navbar__item"><a href="index.html#comprar">Comprar Juego</a></li>
+            <li class="navbar__item"><a href="index.html#trailers">Trailers</a></li>
+            <li class="navbar__item">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 id="game-title">Detalles del Juego</h1>
+            <p id="game-subtitle">Información completa y opciones de compra</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="game-details">
+                    <div class="game-details__image">
+                        <img id="game-image" src="" alt="Imagen del juego">
+                    </div>
+                    <div class="game-details__info">
+                        <h2 id="game-name">Nombre del Juego</h2>
+                        <div class="game-details__meta">
+                            <span id="game-developer"><i class="fas fa-code"></i> Desarrollador</span>
+                            <span id="game-release"><i class="fas fa-calendar-alt"></i> Fecha de lanzamiento</span>
+                            <span id="game-genre"><i class="fas fa-gamepad"></i> Género</span>
+                        </div>
+                        <div class="game-details__price">
+                            <span id="game-price">$59.99</span>
+                        </div>
+                        <div class="game-details__description">
+                            <p id="game-description">Descripción detallada del juego...</p>
+                        </div>
+                        <div class="game-details__stores">
+                            <h3>Comprar en:</h3>
+                            <div class="store-buttons">
+                                <a href="#" id="xbox-link" class="store-button store-button--xbox">
+                                    <i class="fab fa-xbox"></i> Xbox
+                                </a>
+                                <a href="#" id="steam-link" class="store-button store-button--steam">
+                                    <i class="fab fa-steam"></i> Steam
+                                </a>
+                                <a href="#" id="epic-link" class="store-button store-button--epic">
+                                    <i class="fas fa-gamepad"></i> Epic Games
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Características del Juego</h2>
+                <div class="game-features" id="game-features">
+                    <!-- Las características se cargarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Capturas de Pantalla</h2>
+                <div class="game-screenshots" id="game-screenshots">
+                    <!-- Las capturas se cargarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Requisitos del Sistema</h2>
+                <div class="game-requirements">
+                    <div class="requirement">
+                        <h3>Requisitos Mínimos</h3>
+                        <ul id="min-requirements">
+                            <!-- Los requisitos mínimos se cargarán dinámicamente -->
+                        </ul>
+                    </div>
+                    <div class="requirement">
+                        <h3>Requisitos Recomendados</h3>
+                        <ul id="rec-requirements">
+                            <!-- Los requisitos recomendados se cargarán dinámicamente -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Más Juegos que te pueden interesar</h2>
+                <div class="related-games" id="related-games">
+                    <!-- Los juegos relacionados se cargarán dinámicamente -->
+                </div>
+                <div class="more-info-container">
+                    <a href="index.html#comprar" class="btn btn-primary">Ver todos los juegos</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 Sitio Informativo sobre Unreal Engine 5. Este sitio no está afiliado oficialmente con Epic Games.</p>
+            <p>Unreal Engine es una marca registrada de Epic Games, Inc.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Este script cargará los datos del juego seleccionado
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener el ID del juego de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const gameId = urlParams.get('id');
+            
+            // Datos de ejemplo para los juegos (en un sitio real, esto vendría de una base de datos)
+            const games = {
+                'fortnite': {
+                    name: 'Fortnite',
+                    image: 'https://cdn2.unrealengine.com/fortnite-chapter-4-season-1-3840x2160-e4e8f7e927ea.jpg',
+                    developer: 'Epic Games',
+                    release: '2017',
+                    genre: 'Battle Royale',
+                    price: '$0.00 (Free to Play)',
+                    description: 'Fortnite es un videojuego del año 2017 desarrollado por la empresa Epic Games. Es un mundo abierto de supervivencia donde los jugadores colaboran para sobrevivir en un mundo apocalíptico, con elementos de construcción y combate. El juego ha migrado a Unreal Engine 5 para mejorar sus gráficos y rendimiento, ofreciendo una experiencia visual mejorada con efectos de iluminación avanzados y mayor detalle en los entornos.',
+                    features: [
+                        'Nanite: Permite detalles geométricos increíbles en el mapa y los personajes.',
+                        'Lumen: Iluminación global dinámica que mejora la atmósfera del juego.',
+                        'World Partition: Permite un mapa más grande y detallado con mejor rendimiento.',
+                        'MetaSounds: Mejora la experiencia de audio con sonidos más inmersivos.',
+                        'Animación mejorada: Movimientos más fluidos y realistas para los personajes.'
+                    ],
+                    screenshots: [
+                        'https://cdn2.unrealengine.com/fortnite-ue5-screenshot-1-3840x2160-d7f9c9a82980.jpg',
+                        'https://cdn2.unrealengine.com/fortnite-ue5-screenshot-2-3840x2160-c8325c4e8129.jpg',
+                        'https://cdn2.unrealengine.com/fortnite-ue5-screenshot-3-3840x2160-b59c7e4e3081.jpg'
+                    ],
+                    minRequirements: [
+                        'Sistema Operativo: Windows 7/8/10 64-bit',
+                        'Procesador: Core i3-3225 3.3 GHz',
+                        'Memoria RAM: 4 GB',
+                        'Tarjeta Gráfica: Intel HD 4000 / Intel Iris Pro 5200',
+                        'Almacenamiento: 16 GB de espacio libre'
+                    ],
+                    recRequirements: [
+                        'Sistema Operativo: Windows 10/11 64-bit',
+                        'Procesador: Core i5-7300U 3.5 GHz',
+                        'Memoria RAM: 8 GB',
+                        'Tarjeta Gráfica: NVIDIA GTX 960 / AMD R9 280',
+                        'Almacenamiento: 16 GB de espacio libre (SSD recomendado)'
+                    ],
+                    stores: {
+                        xbox: 'https://www.xbox.com/es-ES/games/fortnite',
+                        steam: null, // No disponible en Steam
+                        epic: 'https://store.epicgames.com/es-ES/p/fortnite'
+                    }
+                },
+                'matrix': {
+                    name: 'The Matrix Awakens',
+                    image: 'https://cdn2.unrealengine.com/the-matrix-awakens-an-unreal-engine-5-experience-3840x2160-d3d1d58a1567.jpg',
+                    developer: 'Epic Games',
+                    release: '2021',
+                    genre: 'Experiencia Interactiva',
+                    price: '$0.00 (Gratuito)',
+                    description: 'The Matrix Awakens es una experiencia técnica que muestra las capacidades fotorrealistas de Unreal Engine 5. Desarrollada en colaboración con los creadores de la saga Matrix, esta demo interactiva demuestra el potencial del motor para crear experiencias cinematográficas interactivas con un nivel de detalle y realismo sin precedentes.',
+                    features: [
+                        'Ciudad fotorrealista: Una metrópolis completamente explorable con detalles sin precedentes.',
+                        'Personajes virtuales: Recreaciones hiperrealistas de actores como Keanu Reeves y Carrie-Anne Moss.',
+                        'Física avanzada: Simulación de vehículos, destrucción y efectos ambientales.',
+                        'Transición fluida: Cambios perfectos entre secuencias cinematográficas y gameplay.',
+                        'Iluminación dinámica: Efectos de luz y sombras que cambian según la hora del día.'
+                    ],
+                    screenshots: [
+                        'https://cdn2.unrealengine.com/matrix-awakens-screenshot-1-3840x2160-a9c5b8e4d92b.jpg',
+                        'https://cdn2.unrealengine.com/matrix-awakens-screenshot-2-3840x2160-b7c6b8d3e4f2.jpg',
+                        'https://cdn2.unrealengine.com/matrix-awakens-screenshot-3-3840x2160-c5d6e7f8g9h0.jpg'
+                    ],
+                    minRequirements: [
+                        'Consola: PlayStation 5 o Xbox Series X|S',
+                        'No disponible para PC actualmente'
+                    ],
+                    recRequirements: [
+                        'Consola: PlayStation 5 o Xbox Series X|S',
+                        'No disponible para PC actualmente'
+                    ],
+                    stores: {
+                        xbox: 'https://www.xbox.com/es-ES/games/store/the-matrix-awakens-an-unreal-engine-5-experience/9NKGGP8RMCSZ',
+                        steam: null,
+                        epic: null
+                    }
+                },
+                'hellblade': {
+                    name: 'Senua\'s Saga: Hellblade II',
+                    image: 'https://cdn2.unrealengine.com/hellblade-2-3840x2160-7a7c8d0d48d0.jpg',
+                    developer: 'Ninja Theory',
+                    release: '2024 (Previsto)',
+                    genre: 'Acción y Aventura',
+                    price: '$59.99 (Precio estimado)',
+                    description: 'Senua\'s Saga: Hellblade II es la secuela del aclamado juego de Ninja Theory con gráficos impresionantes gracias a UE5. Este título promete llevar la narrativa psicológica y la inmersión visual a un nuevo nivel, continuando la historia de Senua en un viaje a través de la mitología nórdica y sus propios demonios internos.',
+                    features: [
+                        'Captura de movimiento avanzada: Expresiones faciales y movimientos corporales ultrarrealistas.',
+                        'Audio binaural mejorado: Experiencia sonora 3D que complementa la narrativa psicológica.',
+                        'Entornos fotogramétricos: Escenarios escaneados del mundo real con detalle microscópico.',
+                        'Efectos atmosféricos: Niebla, partículas y efectos climáticos que afectan la jugabilidad.',
+                        'Renderizado de piel y cabello: Tecnología avanzada para representar personajes humanos realistas.'
+                    ],
+                    screenshots: [
+                        'https://cdn2.unrealengine.com/hellblade2-screenshot-1-3840x2160-a1b2c3d4e5f6.jpg',
+                        'https://cdn2.unrealengine.com/hellblade2-screenshot-2-3840x2160-g7h8i9j0k1l2.jpg',
+                        'https://cdn2.unrealengine.com/hellblade2-screenshot-3-3840x2160-m3n4o5p6q7r8.jpg'
+                    ],
+                    minRequirements: [
+                        'Sistema Operativo: Windows 10 64-bit',
+                        'Procesador: Intel Core i5-6600 / AMD Ryzen 5 1600',
+                        'Memoria RAM: 16 GB',
+                        'Tarjeta Gráfica: NVIDIA GTX 1070 / AMD RX 5700',
+                        'Almacenamiento: 50 GB de espacio libre (SSD recomendado)'
+                    ],
+                    recRequirements: [
+                        'Sistema Operativo: Windows 10/11 64-bit',
+                        'Procesador: Intel Core i7-8700K / AMD Ryzen 7 3700X',
+                        'Memoria RAM: 32 GB',
+                        'Tarjeta Gráfica: NVIDIA RTX 3070 / AMD RX 6800 XT',
+                        'Almacenamiento: 50 GB de espacio libre (SSD requerido)'
+                    ],
+                    stores: {
+                        xbox: 'https://www.xbox.com/es-ES/games/senuas-saga-hellblade-ii',
+                        steam: 'https://store.steampowered.com/app/1098190/Senuas_Saga_Hellblade_II/',
+                        epic: 'https://store.epicgames.com/es-ES/p/senuas-saga-hellblade-ii'
+                    }
+                },
+                'wukong': {
+                    name: 'Black Myth: Wukong',
+                    image: 'https://cdn2.unrealengine.com/black-myth-wukong-3840x2160-8a3d8d45c3e4.jpg',
+                    developer: 'Game Science',
+                    release: '2024 (Previsto)',
+                    genre: 'RPG de Acción',
+                    price: '$59.99 (Precio estimado)',
+                    description: 'Black Myth: Wukong es un RPG de acción basado en la mitología china con visuales espectaculares. Desarrollado por Game Science, este título ha captado la atención mundial por su impresionante calidad visual y su ambicioso alcance. El juego está basado en la novela clásica china "Viaje al Oeste" y sigue las aventuras del Rey Mono.',
+                    features: [
+                        'Combate fluido: Sistema de combate dinámico con transformaciones y habilidades mágicas.',
+                        'Criaturas mitológicas: Enemigos y jefes basados en la mitología china con diseños detallados.',
+                        'Efectos de partículas: Magia, fuego y otros efectos visuales que aprovechan el sistema Niagara de UE5.',
+                        'Vegetación densa: Bosques y entornos naturales con millones de elementos individuales.',
+                        'Física de telas: Simulación avanzada para vestimentas, banderas y elementos ambientales.'
+                    ],
+                    screenshots: [
+                        'https://cdn2.unrealengine.com/wukong-screenshot-1-3840x2160-a1s2d3f4g5h6.jpg',
+                        'https://cdn2.unrealengine.com/wukong-screenshot-2-3840x2160-j7k8l9z0x1c2.jpg',
+                        'https://cdn2.unrealengine.com/wukong-screenshot-3-3840x2160-v3b4n5m6q7w8.jpg'
+                    ],
+                    minRequirements: [
+                        'Sistema Operativo: Windows 10 64-bit',
+                        'Procesador: Intel Core i7-9700K / AMD Ryzen 7 3700X',
+                        'Memoria RAM: 16 GB',
+                        'Tarjeta Gráfica: NVIDIA GTX 2060 / AMD RX 5700 XT',
+                        'Almacenamiento: 100 GB de espacio libre (SSD recomendado)'
+                    ],
+                    recRequirements: [
+                        'Sistema Operativo: Windows 10/11 64-bit',
+                        'Procesador: Intel Core i9-10900K / AMD Ryzen 9 5900X',
+                        'Memoria RAM: 32 GB',
+                        'Tarjeta Gráfica: NVIDIA RTX 3080 / AMD RX 6800 XT',
+                        'Almacenamiento: 100 GB de espacio libre (SSD requerido)'
+                    ],
+                    stores: {
+                        xbox: null,
+                        steam: 'https://store.steampowered.com/app/2358720/Black_Myth_Wukong/',
+                        epic: 'https://store.epicgames.com/es-ES/p/black-myth-wukong'
+                    }
+                },
+                'stalker2': {
+                    name: 'S.T.A.L.K.E.R. 2: Heart of Chornobyl',
+                    image: 'https://cdn2.unrealengine.com/stalker-2-3840x2160-a7b3d8a5e7e4.jpg',
+                    developer: 'GSC Game World',
+                    release: '2024 (Previsto)',
+                    genre: 'FPS, Supervivencia',
+                    price: '$59.99',
+                    description: 'S.T.A.L.K.E.R. 2: Heart of Chornobyl es la esperada secuela de la serie S.T.A.L.K.E.R. que aprovecha Unreal Engine 5 para crear un mundo post-apocalíptico increíblemente detallado y atmosférico. El juego te lleva de nuevo a la Zona de Exclusión de Chernóbil, un lugar lleno de anomalías, mutantes y facciones en conflicto.',
+                    features: [
+                        'Mundo abierto: Una recreación detallada de la Zona de Exclusión con ciclo día/noche y clima dinámico.',
+                        'Sistema A-Life 2.0: Ecosistema de IA avanzado donde todas las entidades interactúan entre sí.',
+                        'Anomalías físicas: Fenómenos sobrenaturales con efectos visuales y físicos impresionantes.',
+                        'Narrativa no lineal: Historia ramificada con múltiples finales basados en las decisiones del jugador.',
+                        'Simulación de radiación: Sistema realista que afecta al gameplay y requiere equipamiento especial.'
+                    ],
+                    screenshots: [
+                        'https://cdn2.unrealengine.com/stalker2-screenshot-1-3840x2160-q1w2e3r4t5y6.jpg',
+                        'https://cdn2.unrealengine.com/stalker2-screenshot-2-3840x2160-u7i8o9p0a1s2.jpg',
+                        'https://cdn2.unrealengine.com/stalker2-screenshot-3-3840x2160-d3f4g5h6j7k8.jpg'
+                    ],
+                    minRequirements: [
+                        'Sistema Operativo: Windows 10 64-bit',
+                        'Procesador: AMD Ryzen 5 1600X / Intel Core i5-7600K',
+                        'Memoria RAM: 8 GB',
+                        'Tarjeta Gráfica: AMD Radeon RX 580 8GB / NVIDIA GeForce GTX 1060 6GB',
+                        'Almacenamiento: 150 GB de espacio libre (SSD recomendado)'
+                    ],
+                    recRequirements: [
+                        'Sistema Operativo: Windows 10/11 64-bit',
+                        'Procesador: AMD Ryzen 7 3700X / Intel Core i7-9700K',
+                        'Memoria RAM: 16 GB',
+                        'Tarjeta Gráfica: AMD Radeon RX 5700 XT / NVIDIA GeForce RTX 2070 SUPER',
+                        'Almacenamiento: 150 GB de espacio libre (SSD requerido)'
+                    ],
+                    stores: {
+                        xbox: 'https://www.xbox.com/es-ES/games/store/stalker-2-heart-of-chornobyl/9NL5HHZPSVJR',
+                        steam: 'https://store.steampowered.com/app/1643320/STALKER_2_Heart_of_Chornobyl/',
+                        epic: 'https://store.epicgames.com/es-ES/p/stalker-2'
+                    }
+                }
+            };
+            
+            // Si no hay ID o el juego no existe, mostrar un mensaje de error
+            if (!gameId || !games[gameId]) {
+                document.getElementById('game-title').textContent = 'Juego no encontrado';
+                document.getElementById('game-subtitle').textContent = 'El juego que buscas no está disponible';
+                return;
+            }
+            
+            // Cargar los datos del juego
+            const game = games[gameId];
+            
+            // Actualizar el título de la página
+            document.title = `${game.name} - Unreal Engine 5`;
+            
+            // Actualizar la información del juego
+            document.getElementById('game-title').textContent = game.name;
+            document.getElementById('game-subtitle').textContent = `${game.genre} desarrollado por ${game.developer}`;
+            document.getElementById('game-image').src = game.image;
+            document.getElementById('game-image').alt = game.name;
+            document.getElementById('game-name').textContent = game.name;
+            document.getElementById('game-developer').innerHTML = `<i class="fas fa-code"></i> ${game.developer}`;
+            document.getElementById('game-release').innerHTML = `<i class="fas fa-calendar-alt"></i> ${game.release}`;
+            document.getElementById('game-genre').innerHTML = `<i class="fas fa-gamepad"></i> ${game.genre}`;
+            document.getElementById('game-price').textContent = game.price;
+            document.getElementById('game-description').textContent = game.description;
+            
+            // Configurar los enlaces de las tiendas
+            const xboxLink = document.getElementById('xbox-link');
+            const steamLink = document.getElementById('steam-link');
+            const epicLink = document.getElementById('epic-link');
+            
+            if (game.stores.xbox) {
+                xboxLink.href = game.stores.xbox;
+            } else {
+                xboxLink.classList.add('store-button--disabled');
+                xboxLink.innerHTML = `<i class="fab fa-xbox"></i> No disponible`;
+            }
+            
+            if (game.stores.steam) {
+                steamLink.href = game.stores.steam;
+            } else {
+                steamLink.classList.add('store-button--disabled');
+                steamLink.innerHTML = `<i class="fab fa-steam"></i> No disponible`;
+            }
+            
+            if (game.stores.epic) {
+                epicLink.href = game.stores.epic;
+            } else {
+                epicLink.classList.add('store-button--disabled');
+                epicLink.innerHTML = `<i class="fas fa-gamepad"></i> No disponible`;
+            }
+            
+            // Cargar las características del juego
+            const featuresContainer = document.getElementById('game-features');
+            featuresContainer.innerHTML = '';
+            game.features.forEach(feature => {
+                const featureEl = document.createElement('div');
+                featureEl.className = 'game-feature';
+                featureEl.innerHTML = `<i class="fas fa-check-circle"></i> ${feature}`;
+                featuresContainer.appendChild(featureEl);
+            });
+            
+            // Cargar las capturas de pantalla
+            const screenshotsContainer = document.getElementById('game-screenshots');
+            screenshotsContainer.innerHTML = '';
+            game.screenshots.forEach(screenshot => {
+                const screenshotEl = document.createElement('div');
+                screenshotEl.className = 'game-screenshot';
+                screenshotEl.innerHTML = `<img src="${screenshot}" alt="Captura de ${game.name}">`;
+                screenshotsContainer.appendChild(screenshotEl);
+            });
+            
+            // Cargar los requisitos del sistema
+            const minRequirements = document.getElementById('min-requirements');
+            minRequirements.innerHTML = '';
+            game.minRequirements.forEach(req => {
+                const reqEl = document.createElement('li');
+                reqEl.textContent = req;
+                minRequirements.appendChild(reqEl);
+            });
+            
+            const recRequirements = document.getElementById('rec-requirements');
+            recRequirements.innerHTML = '';
+            game.recRequirements.forEach(req => {
+                const reqEl = document.createElement('li');
+                reqEl.textContent = req;
+                recRequirements.appendChild(reqEl);
+            });
+            
+            // Cargar juegos relacionados
+            const relatedGamesContainer = document.getElementById('related-games');
+            relatedGamesContainer.innerHTML = '';
+            
+            // Mostrar 3 juegos aleatorios diferentes al actual
+            const gameIds = Object.keys(games).filter(id => id !== gameId);
+            const shuffled = gameIds.sort(() => 0.5 - Math.random());
+            const selected = shuffled.slice(0, 3);
+            
+            selected.forEach(id => {
+                const relatedGame = games[id];
+                const gameEl = document.createElement('div');
+                gameEl.className = 'related-game';
+                gameEl.innerHTML = `
+                    <img src="${relatedGame.image}" alt="${relatedGame.name}">
+                    <h3>${relatedGame.name}</h3>
+                    <p>${relatedGame.genre}</p>
+                    <a href="detalles-juego.html?id=${id}" class="btn btn-primary btn-sm">Ver detalles</a>
+                `;
+                relatedGamesContainer.appendChild(gameEl);
+            });
+        });
+    </script>
+</body>
+</html>

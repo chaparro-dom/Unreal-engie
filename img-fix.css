@@ -1,0 +1,44 @@
+/* Estilos adicionales para mejorar la visualización de imágenes */
+
+/* Asegurar que todas las imágenes tengan un tamaño adecuado y transición suave */
+img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+/* Estilo para imágenes en carga */
+img[loading] {
+    opacity: 0.8;
+}
+
+/* Mejorar la visualización de imágenes en tarjetas de juegos */
+.game img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Mejorar la visualización de imágenes en tarjetas de compra */
+.game-card__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Asegurar que el logo se visualice correctamente */
+.navbar__logo img {
+    height: 45px;
+    width: auto;
+    margin-right: 12px;
+    filter: drop-shadow(0 0 5px rgba(0, 168, 232, 0.7));
+}
+
+/* Optimización para dispositivos móviles */
+@media (max-width: 768px) {
+    .game img, .game-card__image {
+        height: 150px;
+    }
+}

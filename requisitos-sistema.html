@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>Requisitos del Sistema para Unreal Engine 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg" alt="Logo Unreal Engine">
+            <span>Unreal Engine 5</span>
+        </div>
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="index.html#inicio">Inicio</a></li>
+            <li class="navbar__item"><a href="index.html#caracteristicas">Características</a></li>
+            <li class="navbar__item"><a href="index.html#ventajas">Ventajas y Desventajas</a></li>
+            <li class="navbar__item"><a href="index.html#requisitos">Requisitos</a></li>
+            <li class="navbar__item"><a href="index.html#juegos">Juegos</a></li>
+            <li class="navbar__item"><a href="index.html#comprar">Comprar Juego</a></li>
+            <li class="navbar__item">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero hero--small">
+        <div class="hero__content">
+            <h1>Requisitos del Sistema</h1>
+            <p>Todo lo que necesitas saber sobre el hardware necesario para Unreal Engine 5</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Requisitos Mínimos</h2>
+                <div class="feature-detailed">
+                    <img src="assets/img/Requisitos Mínimos.jpg" alt="Requisitos Mínimos" class="feature-image">
+                    <div class="feature-content">
+                        <p>Los requisitos mínimos representan la configuración de hardware más básica con la que Unreal Engine 5 puede funcionar. Con esta configuración, podrás ejecutar el motor y crear proyectos simples, pero es posible que algunas características avanzadas estén limitadas o desactivadas.</p>
+                        
+                        <h3>Especificaciones mínimas detalladas:</h3>
+                        <ul>
+                            <li><strong>Sistema Operativo:</strong> Windows 10 64-bit (versión 1909 o posterior)</li>
+                            <li><strong>Procesador:</strong> Quad-core Intel o AMD, 2.5 GHz o mejor</li>
+                            <li><strong>Memoria RAM:</strong> 8 GB (aunque 16 GB es altamente recomendado para proyectos básicos)</li>
+                            <li><strong>Tarjeta Gráfica:</strong> NVIDIA GeForce GTX 1060 / AMD Radeon RX 470 o superior con soporte para DirectX 11 o 12</li>
+                            <li><strong>Almacenamiento:</strong> 40 GB de espacio libre en disco duro (SSD recomendado)</li>
+                            <li><strong>Tarjeta de sonido:</strong> Compatible con DirectX</li>
+                            <li><strong>Conexión a Internet:</strong> Necesaria para descargar el motor y actualizaciones</li>
+                        </ul>
+                        
+                        <p>Con esta configuración, podrás:</p>
+                        <ul>
+                            <li>Ejecutar el editor de Unreal Engine 5 con funcionalidad básica</li>
+                            <li>Desarrollar proyectos 2D y 3D simples</li>
+                            <li>Utilizar Blueprints para programación visual</li>
+                            <li>Crear prototipos de juegos con assets de baja complejidad</li>
+                        </ul>
+                        
+                        <p>Sin embargo, características como Nanite y Lumen estarán limitadas o desactivadas, y experimentarás tiempos de carga más largos y menor rendimiento en general.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Requisitos Recomendados</h2>
+                <div class="feature-detailed">
+                    <img src="assets/img/Requisitos Recomendados.jpg" alt="Requisitos Recomendados" class="feature-image">
+                    <div class="feature-content">
+                        <p>Para aprovechar al máximo Unreal Engine 5 y sus características revolucionarias como Nanite y Lumen, se recomienda una configuración de hardware más potente. Con estos requisitos recomendados, podrás desarrollar proyectos complejos y utilizar todas las funcionalidades del motor.</p>
+                        
+                        <h3>Especificaciones recomendadas detalladas:</h3>
+                        <ul>
+                            <li><strong>Sistema Operativo:</strong> Windows 10/11 64-bit (última versión)</li>
+                            <li><strong>Procesador:</strong> 8-core Intel (i7-9700K o mejor) o AMD (Ryzen 7 3700X o mejor), 3.4 GHz o superior</li>
+                            <li><strong>Memoria RAM:</strong> 32 GB o más (64 GB para proyectos grandes)</li>
+                            <li><strong>Tarjeta Gráfica:</strong> NVIDIA GeForce RTX 2080 / AMD Radeon RX 6700 XT o superior con 8+ GB de VRAM</li>
+                            <li><strong>Almacenamiento:</strong> SSD NVMe con 100+ GB de espacio libre (preferiblemente 250+ GB)</li>
+                            <li><strong>Tarjeta de sonido:</strong> Compatible con DirectX</li>
+                            <li><strong>Conexión a Internet:</strong> Banda ancha de alta velocidad</li>
+                            <li><strong>Monitor:</strong> Resolución 1920x1080 o superior, preferiblemente con soporte para HDR</li>
+                        </ul>
+                        
+                        <p>Con esta configuración, podrás:</p>
+                        <ul>
+                            <li>Utilizar todas las características de Unreal Engine 5, incluidas Nanite y Lumen</li>
+                            <li>Desarrollar proyectos 3D complejos con alta fidelidad visual</li>
+                            <li>Trabajar con grandes cantidades de assets y escenas extensas</li>
+                            <li>Obtener tiempos de compilación y renderizado más rápidos</li>
+                            <li>Experimentar un flujo de trabajo más fluido y productivo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Requisitos para Características Específicas</h2>
+                <div class="feature-detailed">
+                    <img src="assets/img/Requisitos para Características Específicas.jpg" alt="Requisitos para Características Específicas" class="feature-image">
+                    <div class="feature-content">
+                        <p>Algunas características avanzadas de Unreal Engine 5 requieren hardware específico para funcionar correctamente. A continuación, se detallan los requisitos para las tecnologías más exigentes del motor.</p>
+                        
+                        <h3>Nanite (Geometría Virtualizada):</h3>
+                        <ul>
+                            <li><strong>GPU:</strong> NVIDIA RTX 2000 series / AMD RX 6000 series o superior</li>
+                            <li><strong>VRAM:</strong> Mínimo 8 GB (12+ GB recomendado)</li>
+                            <li><strong>API Gráfica:</strong> DirectX 12 o Vulkan</li>
+                            <li><strong>RAM:</strong> 16 GB mínimo (32+ GB recomendado)</li>
+                        </ul>
+                        
+                        <h3>Lumen (Iluminación Global Dinámica):</h3>
+                        <ul>
+                            <li><strong>GPU:</strong> NVIDIA RTX 2000 series / AMD RX 6000 series o superior (RTX 3000/4000 series recomendado para ray tracing por hardware)</li>
+                            <li><strong>VRAM:</strong> Mínimo 8 GB (12+ GB recomendado)</li>
+                            <li><strong>CPU:</strong> 6+ núcleos, 3.0+ GHz</li>
+                            <li><strong>RAM:</strong> 16 GB mínimo (32+ GB recomendado)</li>
+                        </ul>
+                        
+                        <h3>MetaHuman Creator:</h3>
+                        <ul>
+                            <li><strong>GPU:</strong> NVIDIA GTX 1070 / AMD RX 5700 o superior</li>
+                            <li><strong>VRAM:</strong> 8+ GB</li>
+                            <li><strong>CPU:</strong> 8+ núcleos recomendado</li>
+                            <li><strong>RAM:</strong> 32+ GB recomendado</li>
+                            <li><strong>Internet:</strong> Conexión estable de alta velocidad (servicio basado en la nube)</li>
+                        </ul>
+                        
+                        <h3>Desarrollo para Realidad Virtual (VR):</h3>
+                        <ul>
+                            <li><strong>GPU:</strong> NVIDIA RTX 2070 / AMD RX 6700 XT o superior</li>
+                            <li><strong>CPU:</strong> Intel i7-9700K / AMD Ryzen 7 3700X o superior</li>
+                            <li><strong>RAM:</strong> 16 GB mínimo (32 GB recomendado)</li>
+                            <li><strong>Almacenamiento:</strong> SSD NVMe</li>
+                            <li><strong>Hardware VR:</strong> Casco compatible (Oculus Rift/Quest, HTC Vive, Valve Index, etc.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Recomendaciones por Tipo de Proyecto</h2>
+                <div class="feature-detailed">
+                    <img src="assets/img/Recomendaciones por Tipo de Proyecto.jpg" alt="Recomendaciones por Tipo de Proyecto" class="feature-image">
+                    <div class="feature-content">
+                        <p>Dependiendo del tipo de proyecto que estés desarrollando, los requisitos de hardware pueden variar significativamente. Aquí te ofrecemos recomendaciones específicas para diferentes tipos de proyectos.</p>
+                        
+                        <h3>Desarrollo de Juegos 2D:</h3>
+                        <ul>
+                            <li><strong>CPU:</strong> Quad-core, 3.0+ GHz</li>
+                            <li><strong>GPU:</strong> NVIDIA GTX 1060 / AMD RX 570 o superior</li>
+                            <li><strong>RAM:</strong> 16 GB</li>
+                            <li><strong>Almacenamiento:</strong> SSD con 50+ GB de espacio libre</li>
+                        </ul>
+                        
+                        <h3>Desarrollo de Juegos 3D (Escala Media):</h3>
+                        <ul>
+                            <li><strong>CPU:</strong> 6-core, 3.4+ GHz</li>
+                            <li><strong>GPU:</strong> NVIDIA RTX 2060 Super / AMD RX 5700 XT o superior</li>
+                            <li><strong>RAM:</strong> 32 GB</li>
+                            <li><strong>Almacenamiento:</strong> SSD NVMe con 100+ GB de espacio libre</li>
+                        </ul>
+                        
+                        <h3>Desarrollo de Juegos AAA / Mundo Abierto:</h3>
+                        <ul>
+                            <li><strong>CPU:</strong> 8+ core, 3.8+ GHz (Intel i9 / AMD Ryzen 9 recomendado)</li>
+                            <li><strong>GPU:</strong> NVIDIA RTX 3080 / AMD RX 6800 XT o superior</li>
+                            <li><strong>RAM:</strong> 64 GB o más</li>
+                            <li><strong>Almacenamiento:</strong> SSD NVMe de alta velocidad con 250+ GB de espacio libre</li>
+                            <li><strong>Configuración adicional:</strong> Sistema de almacenamiento en RAID para mayor velocidad, múltiples monitores</li>
+                        </ul>
+                        
+                        <h3>Arquitectura y Visualización:</h3>
+                        <ul>
+                            <li><strong>CPU:</strong> 8+ core, 3.6+ GHz</li>
+                            <li><strong>GPU:</strong> NVIDIA RTX 3070 / AMD RX 6800 o superior (RTX 4000 series recomendado)</li>
+                            <li><strong>RAM:</strong> 32-64 GB</li>
+                            <li><strong>Almacenamiento:</strong> SSD NVMe con 100+ GB de espacio libre</li>
+                            <li><strong>Monitor:</strong> Calibrado para color, resolución 4K recomendada</li>
+                        </ul>
+                        
+                        <h3>Desarrollo para Dispositivos Móviles:</h3>
+                        <ul>
+                            <li><strong>CPU:</strong> 6-core, 3.2+ GHz</li>
+                            <li><strong>GPU:</strong> NVIDIA GTX 1660 Super / AMD RX 5600 XT o superior</li>
+                            <li><strong>RAM:</strong> 16-32 GB</li>
+                            <li><strong>Almacenamiento:</strong> SSD con 50+ GB de espacio libre</li>
+                            <li><strong>Dispositivos de prueba:</strong> Variedad de smartphones y tablets para testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Optimización y Consejos</h2>
+                <div class="feature-detailed">
+                    <img src="assets/img/Optimización y Consejos.jpg" alt="Optimización y Consejos" class="feature-image">
+                    <div class="feature-content">
+                        <p>Incluso si no cuentas con el hardware ideal, existen varias estrategias para optimizar el rendimiento de Unreal Engine 5 en tu sistema. Aquí te ofrecemos algunos consejos prácticos.</p>
+                        
+                        <h3>Consejos de optimización:</h3>
+                        <ul>
+                            <li><strong>Actualiza tus controladores:</strong> Mantén siempre actualizados los controladores de tu GPU y otros componentes.</li>
+                            <li><strong>Cierra aplicaciones en segundo plano:</strong> Libera memoria RAM cerrando programas innecesarios mientras trabajas con UE5.</li>
+                            <li><strong>Ajusta la configuración del editor:</strong> Reduce la resolución del viewport y desactiva características visuales avanzadas si experimentas bajo rendimiento.</li>
+                            <li><strong>Utiliza el modo de escalabilidad:</strong> UE5 permite ajustar la calidad visual mediante perfiles de escalabilidad predefinidos.</li>
+                            <li><strong>Gestiona tus assets:</strong> Utiliza LODs (Niveles de Detalle) para modelos complejos y optimiza texturas cuando sea posible.</li>
+                            <li><strong>Considera un disco SSD dedicado:</strong> Instala UE5 y tus proyectos en un SSD separado para mejorar los tiempos de carga.</li>
+                            <li><strong>Actualiza tu hardware estratégicamente:</strong> Si tienes presupuesto limitado, prioriza actualizar la GPU y añadir más RAM.</li>
+                        </ul>
+                        
+                        <h3>Alternativas para hardware limitado:</h3>
+                        <ul>
+                            <li><strong>Utiliza versiones anteriores:</strong> Unreal Engine 4 tiene requisitos menos exigentes y sigue siendo muy potente.</li>
+                            <li><strong>Desactiva Nanite y Lumen:</strong> Utiliza sistemas de iluminación y geometría tradicionales si tu hardware no soporta estas características.</li>
+                            <li><strong>Considera servicios en la nube:</strong> Plataformas como Shadow o AWS pueden permitirte ejecutar UE5 en hardware potente de forma remota.</li>
+                            <li><strong>Enfócate en proyectos 2D o de baja poligonización:</strong> UE5 también es excelente para juegos 2D o con estética minimalista.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 Sitio Informativo sobre Unreal Engine 5. Este sitio no está afiliado oficialmente con Epic Games.</p>
+            <p>Unreal Engine es una marca registrada de Epic Games, Inc.</p>
+        </div>
+    </footer>
+</body>
+</html>

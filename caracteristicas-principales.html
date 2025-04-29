@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>Características Principales de Unreal Engine 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg" alt="Logo Unreal Engine">
+            <span>Unreal Engine 5</span>
+        </div>
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="index.html#inicio">Inicio</a></li>
+            <li class="navbar__item"><a href="index.html#caracteristicas">Características</a></li>
+            <li class="navbar__item"><a href="index.html#ventajas">Ventajas y Desventajas</a></li>
+            <li class="navbar__item"><a href="index.html#requisitos">Requisitos</a></li>
+            <li class="navbar__item"><a href="index.html#juegos">Juegos</a></li>
+            <li class="navbar__item"><a href="index.html#comprar">Comprar Juego</a></li>
+            <li class="navbar__item">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero hero--small">
+        <div class="hero__content">
+            <h1>Características Principales</h1>
+            <p>Descubre en detalle las tecnologías revolucionarias de Unreal Engine 5</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Nanite</h2>
+                <div class="feature-detailed">
+                    <img src="assets/img/Nanite.jpg" alt="Nanite" class="feature-image">
+                    <div class="feature-content">
+                        <p>Nanite es una tecnología de geometría virtualizada que permite a los desarrolladores crear detalles a nivel de píxel con millones de polígonos, sin sacrificar rendimiento. Esta revolucionaria tecnología elimina las preocupaciones sobre el conteo de polígonos y los detalles de nivel de detalle (LOD).</p>
+                        
+                        <h3>Características principales de Nanite:</h3>
+                        <ul>
+                            <li><strong>Geometría virtualizada:</strong> Permite importar y renderizar modelos con cientos de millones de polígonos directamente.</li>
+                            <li><strong>Streaming inteligente:</strong> Solo carga los polígonos necesarios para cada frame, optimizando el rendimiento.</li>
+                            <li><strong>Sin LODs manuales:</strong> Elimina la necesidad de crear versiones de menor resolución de los modelos.</li>
+                            <li><strong>Detalles microscópicos:</strong> Permite detalles a nivel de píxel incluso en objetos muy cercanos a la cámara.</li>
+                            <li><strong>Rendimiento optimizado:</strong> Mantiene altas tasas de fotogramas incluso con escenas extremadamente detalladas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Lumen</h2>
+                <div class="feature-detailed">
+                    <img src="assets/img/lumen.jpg" alt="Lumen" class="feature-image">
+                    <div class="feature-content">
+                        <p>Lumen es un sistema de iluminación global dinámica completamente en tiempo real que reacciona inmediatamente a los cambios de escena y luz. Esto permite a los desarrolladores crear entornos más inmersivos con iluminación realista que se adapta dinámicamente.</p>
+                        
+                        <h3>Características principales de Lumen:</h3>
+                        <ul>
+                            <li><strong>Iluminación global en tiempo real:</strong> Calcula rebotes de luz difusos infinitos para escenas enteras.</li>
+                            <li><strong>Reflejos precisos:</strong> Genera reflejos de alta calidad que cambian con la iluminación y el entorno.</li>
+                            <li><strong>Sombras dinámicas:</strong> Crea sombras realistas que responden a cambios en la iluminación.</li>
+                            <li><strong>Adaptación automática:</strong> Se ajusta a diferentes escalas, desde espacios interiores pequeños hasta vastos paisajes exteriores.</li>
+                            <li><strong>Compatibilidad con materiales:</strong> Funciona con todos los tipos de materiales, incluidos los translúcidos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">MetaSounds</h2>
+                <div class="feature-detailed">
+                    <img src="assets/img/metasounds.jpg" alt="MetaSounds" class="feature-image">
+                    <div class="feature-content">
+                        <p>MetaSounds es un sistema de audio de alto rendimiento que ofrece control completo sobre la jerarquía DSP de audio, similar a los materiales para gráficos. Este sistema permite a los desarrolladores crear experiencias de audio dinámicas y altamente personalizables.</p>
+                        
+                        <h3>Características principales de MetaSounds:</h3>
+                        <ul>
+                            <li><strong>Audio procedimental:</strong> Genera sonidos dinámicamente basados en parámetros del juego.</li>
+                            <li><strong>Flujo de trabajo visual:</strong> Interfaz similar a los Blueprints para diseñar sistemas de audio complejos.</li>
+                            <li><strong>Optimización automática:</strong> Ajusta la calidad del audio según la carga del sistema.</li>
+                            <li><strong>Espacialización avanzada:</strong> Posicionamiento 3D preciso del sonido en entornos virtuales.</li>
+                            <li><strong>Integración con la física:</strong> Genera sonidos realistas basados en interacciones físicas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">World Partition</h2>
+                <div class="feature-detailed">
+                    <img src="assets/img/World Partition.jpg" alt="World Partition" class="feature-image">
+                    <div class="feature-content">
+                        <p>World Partition es un sistema que divide automáticamente el mundo en celdas para transmitir solo lo necesario, permitiendo crear mundos enormes con gestión eficiente de memoria y recursos. Esta tecnología facilita la creación de entornos vastos y detallados.</p>
+                        
+                        <h3>Características principales de World Partition:</h3>
+                        <ul>
+                            <li><strong>División automática:</strong> Segmenta el mundo en celdas que se cargan y descargan dinámicamente.</li>
+                            <li><strong>Streaming eficiente:</strong> Carga solo las partes del mundo que son visibles o relevantes para el jugador.</li>
+                            <li><strong>Colaboración mejorada:</strong> Permite que varios desarrolladores trabajen en diferentes áreas del mismo mundo simultáneamente.</li>
+                            <li><strong>Gestión de datos:</strong> Organiza los activos del mundo para un acceso y carga más rápidos.</li>
+                            <li><strong>Escalabilidad:</strong> Funciona eficientemente tanto en mundos pequeños como en vastos paisajes abiertos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Otras Características Destacadas</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Chaos Physics</h3>
+                        <p>Sistema de física de alta fidelidad que simula destrucción, colisiones y efectos dinámicos con gran realismo y rendimiento optimizado.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Niagara VFX</h3>
+                        <p>Sistema de efectos visuales que permite crear partículas complejas y efectos visuales avanzados con un flujo de trabajo intuitivo y gran flexibilidad.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Control Rig</h3>
+                        <p>Herramienta de animación que facilita la creación de controles personalizados para personajes y objetos, mejorando el flujo de trabajo de animación.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Quixel Bridge</h3>
+                        <p>Integración con la biblioteca Megascans que proporciona acceso a miles de assets fotorrealistas de alta calidad directamente en el editor.</p>
+                    </div>
+                </div>
+                <div class="more-info-container">
+                    <a href="index.html" class="btn btn-primary">Volver a la página principal</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 Sitio Informativo sobre Unreal Engine 5. Este sitio no está afiliado oficialmente con Epic Games.</p>
+            <p>Unreal Engine es una marca registrada de Epic Games, Inc.</p>
+        </div>
+    </footer>
+</body>
+</html>
